@@ -11,7 +11,7 @@
 int strToint(const char* str)
 {
 
-    if (nullptr == str || str == '\0')
+    if (nullptr == str || *str == '\0')
         return 0;
     for (; isspace(*str); str++);//将前面的空格省去
     bool neg = false;//判断是否有正负号
